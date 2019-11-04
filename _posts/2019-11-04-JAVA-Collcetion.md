@@ -48,7 +48,7 @@ Collection<String> c =new ArrayList();
    list1.retainAll(list2);//取交集
    System.out.println("List1:"+list1);
   ```
-  ![img](http://b340.photo.store.qq.com/psb?/V122tq581jjO6d/d2mEUMHaqcG*c9klSOh7B97HnqZSzaxUtAYpdt7HbRw!/b/dFQBAAAAAAAA&amp;bo=*gB9AP4AfQARADc!&rf=viewer_311)
+  ![img](http://b340.photo.store.qq.com/psb?/V122tq581jjO6d/d2mEUMHaqcG*c9klSOh7B97HnqZSzaxUtAYpdt7HbRw!/b/dFQBAAAAAAAA&bo=*gB9AP4AfQARADc!&rf=viewer_311)
   ```java
   System.out.println(list1.containsAll(list2));//判断是否全部包含。
   ```
