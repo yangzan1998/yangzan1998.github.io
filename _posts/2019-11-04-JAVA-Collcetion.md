@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    My first post
+title:    java Collection方法
 subtitle: Hello World
 date:     2019-11-04
 author:   BY 人间喜剧
