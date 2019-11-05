@@ -53,3 +53,32 @@ Collection<String> c =new ArrayList();
   System.out.println(list1.containsAll(list2));//判断是否全部包含。
   ```
   ![img](http://a3.qpic.cn/psb?/V122tq581jjO6d/ncNl3TQ.Gqx9AKIQFfBg*lIeHbLZxjh5Jge*h5FTPk0!/b/dFIBAAAAAAAA&ek=1&kp=1&pt=0&bo=*gBkAP4AZAARADc!&tl=3&vuin=1337734586&tm=1572858000&sce=60-2-2&rf=viewer_311)
+  ## List 是有序的，可重复的容器。
+ list常用的实现类有三个：**ArrayList,Linked,Vector。**
+ ArrayList，Vector的底层实现方式是数组，Linked的底层实现是链表。
+ #### 以下是关于数组索引有关的方法
+ 在Arraylist中还存在一个add（）的重写方法，存在两个参数：add（int arg0，string arg1）在这个方法中，我们可以指定位置加入一个数组元素。
+ ``` java
+ List<String> list =new ArrayList<>();
+		list.add("A");
+		list.add("B");
+		list.add("C");
+		list.add("D");
+		
+		System.out.println(list);
+		
+		list.add(2,"杨赞");
+		System.out.println(list);
+```
+这样我们就可以在数组下标位置为2的地方加入一个“杨赞”的字符串。如果想要删除这个字符串可以：
+``` java
+  list.remove(2);
+ ```
+ 如果我们想改变一个元素，把我们的“C”元素换成杨老二我们可以
+ ```java
+ list.set(2,"杨老二")；
+ ```
+ z这样我们的数组元素就变成了**A,B,杨老二,D**；
+ 
+如果我想找一个元素的索引位置。我们可以用index（object o）;来查找。如果没有这个要查找的object对象，那么返回-1.
+
