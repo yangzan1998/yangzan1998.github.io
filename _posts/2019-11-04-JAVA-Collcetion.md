@@ -10,7 +10,7 @@ tags:
      - java
 ---
 # Collection概念：
-![img](http://b308.photo.store.qq.com/psb?/V122tq581jjO6d/RsdUU1NWjhMVqxhmpAa6KjgZ31UYknNk9*LEwrfK7KE!/c/dDQBAAAAAAAA&bo=jAP0AYwD9AERADc!)
+![avatar](img/0.png)
 ## List 是有序的，可重复的容器。
  list常用的实现类有三个：**ArrayList,Linked,Vector。**
  ArrayList，Vector的底层实现方式是数组，Linked的底层实现是链表。
