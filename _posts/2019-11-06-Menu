@@ -1,0 +1,50 @@
+---
+layout:   post
+title:    menu
+subtitle: Hello World
+date:     2019-11-04
+author:   BY 人间喜剧
+header-img: img/post-bg-2015.jpg
+catalog: ture
+tags:
+     - android
+---
+<# 在活动中使用Meun
+## menu 的建立
+在res目录下建一个Meun。res目录右击——new——Directory,输入文件名menu。接着在这个文件夹下再建一个名叫main的文件菜单右击menu文件夹——new——Menu resource file。输入文件名main，然后在main.xml中添加如下代码：
+``` java 
+        <menu>
+        <item
+            android:id="@+id/add_item"
+            android:title="Add"/>
+         <item
+            android:id="@id/remove_item"
+            android:title="Remove">
+        </menu>
+```
+接着，我们回到我们建的Activity中重写onCreateOptionMeun()方法（重写方法快捷键 ctrl+o）。然后在onCreateOptionMenu（）方法中输入：
+``` java
+ public boolean onCreateOptionMeun(){
+     getMenuInflater().inflater(R.menu.main,menu);
+     return true;
+ }
+ ```
+ 通过getMenuInflater()方法可以得到MenuInflater对象，在调用inflater方法就可以给当前的活动创建菜单了。
+ inflater需要接收两个参数，第一个参数用于指定我们通过那个资源文件创建菜单，这里当然输入R.menu.main。第二个参数用于指定将我们的菜单要添加到哪一个menu菜单中，最后将两个返回return true，表示允许这两个菜单显示出来，如果返回可flase，创建的菜单将无法显示。、
+ 当然仅仅这样我们的菜单是不够的。在菜单中重写onOptionsItemSelected()。
+ ``` java
+ public boolean onOptionsItemSelected(MenuItem item){
+     switch(item.get.getItemId（）){
+         case R.id.add_item:
+            Toast.makeText(this,"你点击了 Add",Toast,.LENGTH_SHORT).show();
+     }
+        case R.id.remove_item:
+        Toast.makeText(this,"你点击了Remove",
+        Toast,LENGTH_SHORT).show();
+        break;
+        default:
+        }
+        return true;
+ }
+ ```
+ 在onOptionsItemSelected()方法中调用item.getItemId（）来判断我们点击的是是哪一个菜单选项，然后给每 个菜单选项加入自己的逻辑处理。
