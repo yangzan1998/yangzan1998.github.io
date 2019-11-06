@@ -24,7 +24,7 @@ Collection<String> c =new ArrayList();
     c.add("杨老二");//加元素
     remove("杨老二");//移除，并不是删除，对象还在，只是删除了地址 
 ```
-![img](http://b338.photo.store.qq.com/psb?/V122tq581jjO6d/WcCysEfWbVrfsoTHUokWozheynIFTaPjYMxRmpwaC6Y!/c/dFIBAAAAAAAA&bo=QgINAkICDQIRADc!)
+![img](https://img-blog.csdnimg.cn/20191106183531627.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lhbmd6YW4xOTk4,size_16,color_FFFFFF,t_70)
    ``` java
    c.clear（）；//移除所有元素；
   Object[] objs=c.toArray();//转化出一个object数组；
@@ -43,21 +43,21 @@ Collection<String> c =new ArrayList();
 	list1.addAll(list2);//把两个所有List中的所有元素都想合成一块。
 	System.out.println("List1:"+list1);
 ```
-![img](http://b190.photo.store.qq.com/psb?/V122tq581jjO6d/IGAeiS2qVGK9v0QtYTn*QUIXLZy7wsVSMXv0CM89qy0!/b/dL4AAAAAAAAA&bo=WgFFAFoBRQARADc!&rf=viewer_311)
+![img](https://img-blog.csdnimg.cn/20191106182912289.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lhbmd6YW4xOTk4,size_16,color_FFFFFF,t_70)
   ```java
   list1.removeAll(list2);//取并集
   System.out.println("List1:"+list1);
  ``` 
- ![img](http://b318.photo.store.qq.com/psb?/V122tq581jjO6d/cO8zqQ2iIjw4ZHVkbGRBkiIyyxu3eq8oB4fbHnpJXPY!/b/dD4BAAAAAAAA&bo=FgGYABYBmAARADc!&rf=viewer_311)
+ ![img](https://img-blog.csdnimg.cn/20191106183039653.jpg)
    ```java
    list1.retainAll(list2);//取交集
    System.out.println("List1:"+list1);
   ```
-  ![img](http://b340.photo.store.qq.com/psb?/V122tq581jjO6d/d2mEUMHaqcG*c9klSOh7B97HnqZSzaxUtAYpdt7HbRw!/b/dFQBAAAAAAAA&amp;bo=*gB9AP4AfQARADc!&rf=viewer_311)
+  ![img](https://img-blog.csdnimg.cn/20191106183051942.jpg)
   ```java
   System.out.println(list1.containsAll(list2));//判断是否全部包含。
   ```
-  ![img](http://a3.qpic.cn/psb?/V122tq581jjO6d/ncNl3TQ.Gqx9AKIQFfBg*lIeHbLZxjh5Jge*h5FTPk0!/b/dFIBAAAAAAAA&ek=1&kp=1&pt=0&bo=*gBkAP4AZAARADc!&tl=3&vuin=1337734586&tm=1572858000&sce=60-2-2&rf=viewer_311)
+  ![img](https://img-blog.csdnimg.cn/20191106183119762.jpg)
 
 
  ArrayList，Vector的底层实现方式是数组，Linked的底层实现是链表。
@@ -88,7 +88,7 @@ Collection<String> c =new ArrayList();
 如果我想找一个元素的索引位置。我们可以用index（object o）;来查找。如果没有这个要查找的object对象，那么返回-1.
 ## ArrayList 底层源码分析：
 数组是长度有限的，数组的特点是：查询效率高，增删效率低，线程不安全。但是ArrayList可以存放任意数量的对像，长度不受限制。原因如下：
-![img](http://b309.photo.store.qq.com/psb?/V122tq581jjO6d/9yPeW14fXeo4vb8KaxHNqfxjILdoL5QW6kRjoDrE14c!/b/dDUBAAAAAAAA&bo=hAJcAYQCXAERADc!&rf=viewer_311)
+![img](https://img-blog.csdnimg.cn/20191106183130434.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lhbmd6YW4xOTk4,size_16,color_FFFFFF,t_70)
 #### 自定义实现ArrayList：
 ```java
 public class SxtArrayList {
@@ -134,7 +134,7 @@ public class SxtArrayList {
 LinkedList是底层双向链表实现存储。特点是：查询效率低，增删效率高，线程不安全。
 #### 双向链表介绍：
 数据节点两个指针，分别指向前一个结点还有后一个结点。
-![img](http://b340.photo.store.qq.com/psb?/V122tq581jjO6d/Zn2P.NdXj1U85uk4Xkpi7GbK0LKlWmXkoQ0GL2V4c2o!/b/dFQBAAAAAAAA&bo=egPrAHoD6wARADc!&rf=viewer_311)
+![img](https://img-blog.csdnimg.cn/2019110618314413.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lhbmd6YW4xOTk4,size_16,color_FFFFFF,t_70)
 #### 结点
 根据连链表的规则，我们的每个结点应该有三个内容：
 ```java
