@@ -45,10 +45,10 @@ Collection<String> c =new ArrayList();
 ```
 ![img](https://img-blog.csdnimg.cn/20191106183039653.jpg)
   ```java
-  list1.removeAll(list2);//取并集
+  list1.removeAll(list2);//取先求交集，然后取补
   System.out.println("List1:"+list1);
  ``` 
- ![img]()
+ ![img](https://img-blog.csdnimg.cn/20191106183051942.jpg)
    ```java
    list1.retainAll(list2);//取交集
    System.out.println("List1:"+list1);
