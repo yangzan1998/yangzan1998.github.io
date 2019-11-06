@@ -8,7 +8,7 @@ author:   BY 人间喜剧
 header-img: img/404-bg.jpg
 catalog: ture
 tags:
-     - 生活
+     - java
 ---
 # File类：
 java.io.file类代表文件和目录。在开发中，读取，生成，删除，修改文件属性会用到该类。
