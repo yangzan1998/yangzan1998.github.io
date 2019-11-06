@@ -10,7 +10,7 @@ tags:
      - java
 ---
 # Collection概念：
-![img](https://img-blog.csdnimg.cn/20191106182912289.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lhbmd6YW4xOTk4,size_16,color_FFFFFF,t_70)
+![img](https://img-blog.csdnimg.cn/20191106183531627.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lhbmd6YW4xOTk4,size_16,color_FFFFFF,t_70)
 ## List 是有序的，可重复的容器。
  list常用的实现类有三个：**ArrayList,Linked,Vector。**
  ArrayList，Vector的底层实现方式是数组，Linked的底层实现是链表。
@@ -24,7 +24,7 @@ Collection<String> c =new ArrayList();
     c.add("杨老二");//加元素
     remove("杨老二");//移除，并不是删除，对象还在，只是删除了地址 
 ```
-![img](https://img-blog.csdnimg.cn/20191106183531627.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lhbmd6YW4xOTk4,size_16,color_FFFFFF,t_70)
+![img](https://img-blog.csdnimg.cn/20191106182912289.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lhbmd6YW4xOTk4,size_16,color_FFFFFF,t_70)
    ``` java
    c.clear（）；//移除所有元素；
   Object[] objs=c.toArray();//转化出一个object数组；
@@ -43,17 +43,17 @@ Collection<String> c =new ArrayList();
 	list1.addAll(list2);//把两个所有List中的所有元素都想合成一块。
 	System.out.println("List1:"+list1);
 ```
-![img](https://img-blog.csdnimg.cn/20191106182912289.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lhbmd6YW4xOTk4,size_16,color_FFFFFF,t_70)
+![img](https://img-blog.csdnimg.cn/20191106183039653.jpg)
   ```java
   list1.removeAll(list2);//取并集
   System.out.println("List1:"+list1);
  ``` 
- ![img](https://img-blog.csdnimg.cn/20191106183039653.jpg)
+ ![img]()
    ```java
    list1.retainAll(list2);//取交集
    System.out.println("List1:"+list1);
   ```
-  ![img](https://img-blog.csdnimg.cn/20191106183051942.jpg)
+  ![img](https://img-blog.csdnimg.cn/20191106183109119.jpg)
   ```java
   System.out.println(list1.containsAll(list2));//判断是否全部包含。
   ```
