@@ -10,7 +10,7 @@ tags:
      - java
 ---
 # Collection概念：
-![avatar](img/0.png)
+![avatar](img/1.jpg)
 ## List 是有序的，可重复的容器。
  list常用的实现类有三个：**ArrayList,Linked,Vector。**
  ArrayList，Vector的底层实现方式是数组，Linked的底层实现是链表。
